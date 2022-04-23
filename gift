@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Isn't that a gift? </title>
+  <style> 
+  
+  /* Thanks mis for making me friend ❤️ */
+  
+*{
+margin: 0;
+padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+}
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);}}
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);}}
+.border {
+    position: relative;
+    z-index: 0;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,#0003);
+}
+.border::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #22ebff;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#2e00ff, #917af9);
+    -webkit-animation: rotate 4s linear infinite;
+    animation: rotate 4s linear infinite;
+}
+.border::after {
+  content: "mars";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #000;
+  border-radius: 5px;
+} 
+.container {
+    max-width: 1060px;
+    margin: auto;}
+h1{
+text-align: center;
+color: #fff;
+background: rgba(0,0,0,.9);
+text-shadow: 10px 10px 150px #0ff;
+animation: animate 1s linear infinite;}
+@keyframes animate{
+0% {filter: hue-rotate(0deg);}
+100% {filter: hue-rotate(360deg);}}
+   </style>
+  </head>
+  <body>
+<div class="border" ><h1>"Anisa Tasnim" <p> GF of ishwarchandravidyarsagar</p> </h1></div>
+  </body>
+</html>
